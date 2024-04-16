@@ -6,7 +6,7 @@ const App = () => {
 
     const fetchWeatherData = async () => {
         try {
-            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f73d7fb2521b03d645ad7b3ab94ce8ba&units=metric`);
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=API_Key_Here&units=metric`);
             const data = await response.json();
             setWeatherData(data);
         } catch (error) {
